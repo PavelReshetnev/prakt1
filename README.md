@@ -1,4 +1,5 @@
-# ia obosralsa
+# Решетнев Павел 623 гр.
 
 
-ghidko
+Тут практика №1
+peepoClap
