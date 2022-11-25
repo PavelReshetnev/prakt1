@@ -5,19 +5,19 @@ import 'dart:math';
 
 void main() async {
   final file = File('numsTask3.txt');
-  String nums_txt = "";
+  String numstxt = "";
   Stream<String> lines =
       file.openRead().transform(utf8.decoder).transform(LineSplitter());
   await for (String line in lines) {
-    nums_txt += line;
+    numstxt += line;
 
     List<int> arr = [];
     String vrem = "";
-    for (int i = 0; i < nums_txt.length; i++) {
-      if (nums_txt[i] != " ") {
-        vrem += nums_txt[i];
+    for (int i = 0; i < numstxt.length; i++) {
+      if (numstxt[i] != " ") {
+        vrem += numstxt[i];
       }
-      if (nums_txt[i] == " " || i + 1 == nums_txt.length) {
+      if (numstxt[i] == " " || i + 1 == numstxt.length) {
         arr.add(int.parse(vrem));
         vrem = "";
       }
